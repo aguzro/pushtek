@@ -1,0 +1,11 @@
+/*===== Header =====*/
+.parallax-container {
+	@include padding-sections (10%, 3%);
+	@include opacity;
+	h1 {
+		@include titulos (bold, $color-text-light, Roboto, capitalize);
+	}
+	p {
+		@include parrafos (1.3em, $color-text-light, Open Sans);
+	}	
+}
