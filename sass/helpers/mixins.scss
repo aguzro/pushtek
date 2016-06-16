@@ -1,0 +1,34 @@
+/*===== Imágenes =====*/
+@mixin img ($width , $height) {
+	max-width: $width;
+	height: $height;
+}
+
+
+/*===== Espacios =====*/
+@mixin padding-sections ($top, $bottom) {
+	padding-top: $top;
+	padding-bottom: $bottom;
+}
+
+/*===== Efecto =====*/
+@mixin opacity {
+	background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 36%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 36%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 36%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+}
+
+/*===== Textos =====*/
+@mixin parrafos ($size , $color, $font-fam) {
+	font-size: $size;
+	color: $color;
+	font-family: $font-fam;
+}
+
+@mixin titulos ($weight , $color, $font-fam, $transform) {
+	font-weight: $weight;
+	color: $color;
+	font-family: $font-fam;
+	text-transform: $transform;
+}
