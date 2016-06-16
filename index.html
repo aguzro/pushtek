@@ -6,17 +6,17 @@
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>    
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>    
     
-    <title>Personal Web</title>
+  <title>Personal Web</title>
 
 	<!--Import Google Icon Font-->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!--Materialize.css-->
-    <link rel="stylesheet" type="text/css" href="css/materialize.min.css" rel="stylesheet" media="screen,projection">
+  <!--Materialize.css-->
+  <link rel="stylesheet" type="text/css" href="css/materialize.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 		
@@ -48,7 +48,8 @@
 
 	<!-- Header -->        
 	<div class="parallax-container dark" id="parallax-section">
-		<div class="parallax"><img src="img/photo-1445620466293-d6316372ab59.jpg"></div>
+		<div class="parallax"><img src="img/photo-1445620466293-d6316372ab59.jpg">
+		</div>
 		  <div class="container">
 		    <div class="row">
 		      	<div class="col s12">
@@ -59,16 +60,70 @@
 		    </div>
 		  </div>
 		</div> <!-- fin Header -->
+
 	<!-- Nosotros -->
 	<section id="nosotros">
 		<div class="container">
 			<div class="row">
 				<div class="col s12">
-					<h2>nosotros</h2>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+					<h3 class="center">nosotros</h3>
+					<p class="center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 				</div>
 			</div>
 		</div>
+	</section> <!-- fin Nosotros-->
+
+	<!-- Productos -->
+	<section id="productos">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="container">
+					<div class="col s12">
+						<h3 class="center">Productos</h3>
+						<p class="center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="container">
+					<div class="col s12 m6 l6">
+						<div class="card">
+					    <div class="card-image waves-effect waves-block waves-light">
+					      <img class="activator" src="images/office.jpg">
+					    </div>
+					    <div class="card-content">
+					      <span class="card-title activator grey-text text-darken-4">Protesis<i class="material-icons right">more_vert</i></span>
+					      <p><a href="#">This is a link</a></p>
+					    </div>
+					    <div class="card-reveal">
+					      <span class="card-title grey-text text-darken-4">Protesis<i class="material-icons right">close</i></span>
+					      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+					    </div>
+					  </div>
+					</div>
+					<div class="col s12 m6 l6">
+						<div class="card">
+					    <div class="card-image waves-effect waves-block waves-light">
+					      <img class="activator" src="images/office.jpg">
+					    </div>
+					    <div class="card-content">
+					      <span class="card-title activator grey-text text-darken-4">Lens<i class="material-icons right">more_vert</i></span>
+					      <p><a href="#">This is a link</a></p>
+					    </div>
+					    <div class="card-reveal">
+					      <span class="card-title grey-text text-darken-4">Lens<i class="material-icons right">close</i></span>
+					      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+					    </div>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> <!-- fin Productos -->
+
+	<!-- Equipo -->
+	<section id="equipo">
+		
 	</section>
 
 
@@ -81,7 +136,7 @@
       	</script>
 	    	<script>
 				$(document).ready(function(){
-		      	$('.parallax').parallax();
+		    $('.parallax').parallax();
 		    });
 				</script>
 				<script>
