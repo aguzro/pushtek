@@ -19,11 +19,62 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-	
+		
+	<!-- Nav -->
+	<nav>
+    <div class="container-fluid">
+    	<div class="row">
+    		<div class="col s12">
+    			<div class="nav-wrapper">
+    			  <a href="#!" class="brand-logo">PushTek</a>
+    			  <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    			  <ul class="right hide-on-med-and-down">
+    			    <li><a href="">Nosotros</a></li>
+    			    <li><a href="">Productos</a></li>
+    			    <li><a href="">Equipo</a></li>
+    			    <li><a href="">Contacto</a></li>
+    			  </ul>
+    			  <ul class="side-nav" id="mobile-demo">
+    			    <li><a href="">Nosotros</a></li>
+    			    <li><a href="">Productos</a></li>
+    			    <li><a href="">Equipo</a></li>
+    			    <li><a href="">Contacto</a></li>
+    			  </ul>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+  </nav>  <!-- fin Nav -->
+
+	<!-- Header -->        
+		  <div class="parallax-container dark" id="parallax-section">
+		    <div class="parallax"><img src="img/photo-1445620466293-d6316372ab59.jpg"></div>
+		    <div class="container">
+		      <div class="row">
+		      		<div class="col s12">
+		      			<h1 class="header center">PushTek</h1>
+		      			<p class="center">Desarrollo de tecnologías para personas con discapacidad.
+		      			</p>
+		      		</div>
+		      </div>
+		    </div>
+		  </div> <!-- fin Header -->
 
 
-
-
-
+	<!--Import jQuery before materialize.js-->
+      	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      	<script type="text/javascript" src="js/materialize.min.js"></script>
+      	<script type="text/javascript" src="js/smoothscrolling.jquery.js"></script>
+      	<script>
+      	$(".button-collapse").sideNav();
+      	</script>
+	    	<script>
+				$(document).ready(function(){
+		      	$('.parallax').parallax();
+		    });
+				</script>
+				<script>
+				$("a[href*=#]").smoothscrolling();
+				</script>
 </body>
 </html>
